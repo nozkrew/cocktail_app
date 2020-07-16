@@ -28,6 +28,7 @@ const routes = [
   { path:'/nonalcoholic', component: NonAlcoholicDrink, name: 'NonAlcoholicDrink' },
   { path:'/byingredient/:ingredient', component: ByIngredientView, name: 'ByIngredientView' },
   { path:'/bycategory/:category', component: ByCategoryView, name: 'ByCategoryView' },
+  { path: '*', redirect: '' }
 ]
 
 const router = new VueRouter({
